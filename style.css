@@ -1,3 +1,7 @@
+html {
+    font-size: 20px;
+}
+
 body {
     margin: 40px 100px;
 
@@ -66,4 +70,85 @@ header {
 
 hr {
     margin: 0;
+}
+
+#units div {
+    display: inline-block;
+    height: 300px;
+}
+
+#one {
+    background-color: aqua;
+    width: 30%;
+}
+#two {
+    margin-left: 2rem;
+    background-color: honeydew;
+    width: 60%;
+}
+
+#units {
+    max-width: 500px;
+}
+
+.my-button {
+    transition: background-color 0.5s, border-color 5s;
+    background-color: #fff;
+    border: 1px solid #fff;
+    margin: 50px;
+    min-height: 40px;
+    min-width: 100px;
+}
+
+.my-button:hover {
+    border: 1px solid #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+main {
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 750px;    
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        width: 1400px;
+    }
+    
+}
+
+.pseudoclasses {
+    background-color: red;
+}
+.pseudoclasses ul {
+    background-color: aqua;
+    margin: 0;
+    padding: 1rem;
+}
+
+.pseudoclasses li {
+    margin: 3rem;
+    background-color: khaki;
+}
+
+.pseudoclasses ul li:first-of-type {
+    margin-top: 0;
+}
+
+.pseudoclasses ul li:nth-of-type(3) {
+    font-size: 48px;
+}
+
+li.class1 {
+    color: red;
+}
+
+.class2 {
+    color: blue;
 }
